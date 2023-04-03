@@ -1,0 +1,29 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sidebar {
+    grid-column: 3 / 4;
+    &__imagen {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &__contenido {
+        background-color: v.$secundario;
+        text-align: center;
+        padding: 2rem;
+    }
+    &__heading {
+        font-family: v.$fuentePrincipal;
+        color: v.$blanco;
+        margin: 0;
+    }
+    &__texto {
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        span {
+            font-weight: normal;
+        }
+    }
+}
